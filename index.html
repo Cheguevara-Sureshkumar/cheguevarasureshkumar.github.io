@@ -1,159 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-        }
-        .header {
-            background-color: #007bff;
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-        }
-        .section-heading {
-            margin-bottom: 30px;
-        }
-        .project-card {
-            margin-bottom: 30px;
-            transition: transform 0.3s;
-        }
-        .project-card:hover {
-            transform: scale(1.05);
-        }
-    </style>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Yael Ben Shalom's portfolio">
+    <meta name="author" content="Yael Ben Shalom">
+
+    <meta property="og:title" content="Yael Ben Shalom">
+    <meta property="og:type" content="Website">
+    <meta property='og:description' content="Yael Ben Shalom's portfolio">
+    <meta property="og:image" content="https://github.com/YaelBenShalom/yaelbenshalom.github.io/blob/master/img/header.jpg">
+    <meta property="og:image:secure_url" content="https://github.com/YaelBenShalom/yaelbenshalom.github.io/blob/master/img/header.jpg">
+    <meta property="og:image:width" content="490" /> 
+    <meta property="og:image:height" content="310" />
+    <meta property="og:url" content="https://yaelbenshalom.github.io">
+
+    <title>Yael Ben Shalom</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link
+        href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link
+        href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <meta name="viewport" content="width=device-width">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Your Name</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+
+<body id="page-top">
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+            <a class="navbar-brand page-scroll" href="#page-top">Yael Ben Shalom</a>
         </div>
-    </nav>
 
-    <!-- Header -->
-    <header class="header" id="home">
-        <div class="container">
-            <h1>Your Name</h1>
-            <h2>Software Engineer | Web Developer</h2>
-            <a href="#projects" class="btn btn-light mt-3">View My Work</a>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="#portfolio_introduction">Projects</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#other_platforms">Platforms</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-    </header>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+  <header id="header">
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1>Yael Ben Shalom</h1>
+            <hr>
+            <h2>Robotics Software & Mechanical Engineer</h2>
+            <br><br>
+            <a href="#portfolio_introduction" class="btn btn-primary btn-xl wow tada page-scroll">Find Out More</a>
+        </div>
+    </div>
+</header>
+  <aside class="bg-primary" id="portfolio_introduction">
+    <div class="container-fluid text-center">
+        <div class="col-lg-6 col-lg-offset-3 text-center">
+            <h2>FEATURED PROJECTS</h2>
+            <hr class="light">
+            <p class="text-faded">A glance at my most recent projects<br>
+                Click on the following videos to learn more</p>
+        </div>
+    </div>
+</aside>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-5">
-        <div class="container">
-            <h2 class="text-center section-heading">My Projects</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card project-card">
-                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-text">Description of project 1</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
+<section class="no-padding" id="portfolio">
+    <div class="container-fluid center">
+        <div class="row no-gutter center">
+            <div class="col-lg-4 col-sm-6 center">
+                <a href="recycler_baxter/index.html" target="_blank" class="portfolio-box" tabindex="-1" role="dialog"
+                    aria-hidden="true">
+                    <img src="img/portfolio/1.gif" class="img-responsive" alt="recycler_baxter">
+                    <span class="link-spanner"></span>
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-name">
+                                Recycler Baxter
+                            </div>
+                            <div class="project-category text-faded">
+                                Using computer vision and motion planning to make Baxter sort cans and bottles for
+                                recycling
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card project-card">
-                        <img src="project2.jpg" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 2</h5>
-                            <p class="card-text">Description of project 2</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 center">
+                <a href="ML_object_detection/index.html" target="_blank" class="portfolio-box" tabindex="-1"
+                    role="dialog" aria-hidden="true" data-toggle="modal">
+                    <img src="img/portfolio/2.gif" class="img-responsive"
+                        alt="ML_object_recognition_and_classification">
+                    <span class="link-spanner"></span>
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-name">
+                                Real-Time Objects Recognition
+                            </div>
+                            <div class="project-category text-faded">
+                                Building and training a deep neural network to recognize and classify traffic-signs and
+                                recyclable trash
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card project-card">
-                        <img src="project3.jpg" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 3</h5>
-                            <p class="card-text">Description of project 3</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 center">
+                <a href="EKF_SLAM/index.html" target="_blank" class="portfolio-box" tabindex="-1" role="dialog"
+                    aria-hidden="true" data-toggle="modal">
+                    <img src="img/portfolio/3.gif" class="img-responsive" alt="EKF-SLAM">
+                    <span class="link-spanner"></span>
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-name">
+                                EKF SLAM from Scratch
+                            </div>
+                            <div class="project-category text-faded">
+                                Implementing feature-based EKF SLAM with unsupervised learning from Scratch
+                            </div>
                         </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 center">
+                <a href="motorized_prosthetic_arm/index.html" target="_blank" class="portfolio-box center" tabindex="-1"
+                    role="dialog" aria-hidden="true" data-toggle="modal">
+                    <img src="img/portfolio/4.gif" class="img-responsive" alt="motorized prosthetic arm">
+                    <span class="link-spanner"></span>
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-name">
+                                Motorized Prosthetic Arm
+                            </div>
+                            <div class="project-category text-faded">
+                                Designing, building and controlling a motorized prosthetic arm to help amputees regain balance while walking
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 center">
+                <a href="mobile_manipulation/index.html" target="_blank" class="portfolio-box" tabindex="-1"
+                    role="dialog" aria-hidden="true">
+                    <img src="img/portfolio/5.gif" class="img-responsive" alt="mobile_manipulation">
+                    <span class="link-spanner"></span>
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-name">
+                                Mobile Manipulation
+                            </div>
+                            <div class="project-category text-faded">
+                                Applying feedback control to make a mobile manipulator to pick up a block at a specified
+                                location and carry it to desired location
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 center">
+                <a href="pen_recognition/index.html" target="_blank" class="portfolio-box" tabindex="-1" role="dialog"
+                    aria-hidden="true" data-toggle="modal">
+                    <img src="img/portfolio/6.gif" class="img-responsive" alt="pen_recognition">
+                    <span class="link-spanner"></span>
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-name">
+                                Robotic Arm Control Using Computer Vision Perception
+                            </div>
+                            <div class="project-category text-faded">
+                                Programming robotic arm to identify and "steal" a pen using 3D camera and image
+                                recognition
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 center">
+                <a href="turtlebot_SLAM/index.html" target="_blank" class="portfolio-box center" tabindex="-1"
+                    role="dialog" aria-hidden="true" data-toggle="modal">
+                    <img src="img/portfolio/7.gif" class="img-responsive" alt="Project 7">
+                    <span class="link-spanner"></span>
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-name">
+                                Turtlebot3 SLAM
+                            </div>
+                            <div class="project-category text-faded">
+                                Exploration and navigation using SLAM Toolbox
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 center">
+                <a href="mechatronics/index.html" target="_blank" class="portfolio-box" tabindex="-1" role="dialog"
+                    aria-hidden="true" data-toggle="modal">
+                    <img src="img/portfolio/8.jpg" class="img-responsive" alt="mechatronics">
+                    <span class="link-spanner"></span>
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-name">
+                                Robot Navigation and Control
+                            </div>
+                            <div class="project-category text-faded">
+                                Building a wheeled robot and programming it to navigate autonomously through an obstacle
+                                course
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 center">
+                <a href="maze/index.html" target="_blank" class="portfolio-box" tabindex="-1" role="dialog"
+                    aria-hidden="true" data-toggle="modal">
+                    <img src="img/portfolio/9.gif" class="img-responsive" alt="maze">
+                    <span class="link-spanner"></span>
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-name">
+                                Maze Implementation and Exploration
+                            </div>
+                            <div class="project-category text-faded">
+                                Generating, solving, and visualizing a maze
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+  <aside class="bg-primary" id="other_platforms">
+    <div class="container-fluid text-center">
+        <div class="col-lg-6 col-lg-offset-3 text-center">
+            <h2>OTHER PLATFORMS</h2>
+            <hr class="light">
+            <p class="text-faded">Check out my work on other platforms</p>
+            <br><br>
+        </div>
+    </div>
+    <div class="container-fluid center">
+        <div class="row">
+            <div class="col-lg-3 col-lg-offset-3 col-md-3 col-md-offset-3 col-sm-3 col-sm-offset-3 text-center">
+                <a href="https://github.com/YaelBenShalom" target="_blank" class="portfolio-box" tabindex="-1"
+                    role="dialog" style="width:100%">
+                    <img src="img/platforms/github.jpg" class="img-responsive" alt="GitHub">
+                    <span class="link-spanner"></span>
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-name">
+                                GitHub Page
+                            </div>
+                            <div class="project-category text-faded">
+                                My GitHub profile contains my current and past work
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 text-center">
+                <a href="https://yaelbenshalom.github.io/GenerativeMethods/index.html" target="_blank"
+                    class="portfolio-box" tabindex="-1" role="dialog" aria-hidden="true" data-toggle="modal"
+                    style="width:100%">
+                    <img src="img/platforms/genmethods.gif" class="img-responsive" alt="Generative methods">
+                    <span class="link-spanner"></span>
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-name">
+                                Generative Methods Webpage
+                            </div>
+                            <div class="project-category text-faded">
+                                My website for interactive generative apps built with Javascript and web technologies
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br>
+    </div>
+</aside>
+  <section id="skills">
+    <div class="container-fluid center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">MY SKILLS</h2>
+                <hr class="primary">
+                <br>
+            </div>
+        </div>
+        <div class="row center">
+            <div class="col-lg-2 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 text-center">
+                <div class="service-box text-center">
+                    <span class="fa-stack fa-4x text-center">
+                        <img style="border-radius: 25%" src="img/skills/robotics.jpg" alt="Robotics" width="130"
+                            height="130">
+                    </span>
+                    <br><br><br>
+                    <h3 style="line-height: 1.5;">Robotics</h3>
+                    <br><br>
+                    <p class="text-muted" style="font-size:15px">Robot Operation System (ROS)</p>
+                    <p class="text-muted" style="font-size:15px">Feedback Control Systems</p>
+                    <p class="text-muted" style="font-size:15px">Motion & Path Planning</p>
+                    <p class="text-muted" style="font-size:15px">Robotic Manipulation</p>
+                    <p class="text-muted" style="font-size:15px">Artificial Intelligence</p>
+                    <p class="text-muted" style="font-size:15px">Machine Learning</p>
+                    <p class="text-muted" style="font-size:15px">Image Processing</p>
+                    <p class="text-muted" style="font-size:15px">Computer Vision</p>
+                    <p class="text-muted" style="font-size:15px">Mechatronics</p>
+                    <p class="text-muted" style="font-size:15px">SLAM</p>
+                    <!-- <p class="text-muted">Pytorch</p>
+                    <p class="text-muted">OpenCV</p>
+                    <p class="text-muted">Gazebo</p>
+                    <p class="text-muted">MoveIt!</p> -->
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3 text-center">
+                <div class="service-box text-center">
+                    <span class="fa-stack fa-4x text-center">
+                        <img style="border-radius: 25%" src="img/skills/programming.jpg" alt="Programming" width="130"
+                            height="130">
+                    </span>
+                    <br><br><br>
+                    <h3 style="line-height: 1.5">Programming</h3>
+                    <br><br>
+                    <p class="text-muted" style="font-size:15px">Python</p>
+                    <p class="text-muted" style="font-size:15px">C++</p>
+                    <p class="text-muted" style="font-size:15px">C</p>
+                    <p class="text-muted" style="font-size:15px">HTML, CSS</p>
+                    <p class="text-muted" style="font-size:15px">JavaScript</p>
+                    <p class="text-muted" style="font-size:15px">Matlab</p>
+                    <p class="text-muted" style="font-size:15px">Linux</p>
+                    <p class="text-muted" style="font-size:15px">Git</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3 text-center">
+                <div class="service-box text-center">
+                    <span class="fa-stack fa-4x text-center">
+                        <img style="border-radius: 25%" src="img/skills/mech_eng.jpeg" alt="Mechanical Engineering"
+                            width="130" height="130">
+                    </span>
+                    <br><br>
+                    <h3 style="line-height: 1.5">Mechanical Engineering</h3>
+                    <br>
+                    <p class="text-muted" style="font-size:15px">Electro-Optical System Design</p>
+                    <p class="text-muted" style="font-size:15px">Thermal/Structural Analysis</p>
+                    <p class="text-muted" style="font-size:15px">Electronic-Packaging</p>
+                    <p class="text-muted" style="font-size:15px">Solidworks</p>
+                    <p class="text-muted" style="font-size:15px">Visualize</p>
+                    <p class="text-muted" style="font-size:15px">Inspire</p>
+                    <p class="text-muted" style="font-size:15px">Ansys</p>
+                    <p class="text-muted" style="font-size:15px">CFdesign</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3 text-center">
+                <div class="service-box text-center">
+                    <span class="fa-stack fa-4x text-center">
+                        <img style="border-radius: 25%" src="img/skills/elect_eng.jpg" alt="Electrical Engineering"
+                            width="130" height="130">
+                    </span>
+                    <br><br>
+                    <h3 style="line-height: 1.5">Electrical Engineering</h3>
+                    <br>
+                    <p class="text-muted" style="font-size:15px">Electronic System Design</p>
+                    <p class="text-muted" style="font-size:15px">QA and Hardware Testing</p>
+                    <p class="text-muted" style="font-size:15px">PCB Design</p>
+                    <p class="text-muted" style="font-size:15px">Eagle</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3 text-center">
+                <div class="service-box text-center">
+                    <span class="fa-stack fa-4x text-center">
+                        <img style="border-radius: 25%" src="img/skills/mfg.jpeg" alt="Manufacturing" width="130"
+                            height="130">
+                    </span>
+                    <br><br><br>
+                    <h3 style="line-height: 1.5">Manufacturing</h3>
+                    <br><br>
+                    <p class="text-muted" style="font-size:15px">3D Printing</p>
+                    <p class="text-muted" style="font-size:15px">Laser Cutting</p>
+                    <p class="text-muted" style="font-size:15px">PCB Manufacturing</p>
+                    <p class="text-muted" style="font-size:15px">Sheet Metal</p>
+                    <p class="text-muted" style="font-size:15px">Soldering</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <br><br>
+            <div class="col-md-12 text-center">
+                <a href="./Yael Ben Shalom - Resume.pdf" target="_blank"
+                    class="btn btn-primary btn-xl wow tada">Download Resume</a>
+            </div>
+        </div>
+    </div>
+</section>
+  <section class="bg-primary" id="about">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-sm-4 col-xs-4 col-lg-offset-1 col-sm-offset-1 col-xs-offset-1 text-center">
+                <img src="img/about/about.jpg" class="img-responsive" alt="About me"
+                    style="text-align: center; width:80%; border-radius:20%; border:5px solid rgb(90, 90, 90)">
+                <br>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-6 text-center">
+                <h2 class="section-heading">ABOUT ME</h2>
+                <hr class="light">
+                <br>
+                <p class="text-faded">As a software engineer on the Mapping and Localization team at Nuro, I specialize
+                    in developing and implementing cutting-edge technologies to enable self-driving cars to navigate
+                    the world.
+                </p>
+                <p class="text-faded">With my strong background in electronics, mechanics, and robotics engineering,
+                    as well as program management, I have a diverse understanding of the systems and processes that
+                    make autonomous vehicles work.
+                </p>
+                <p class="text-faded">I excel in creating innovative solutions and delivering high-quality results.
+                    I have a proven track record of successfully leading cross-functional teams and am able to work
+                    effectively in a fast-paced, team-oriented environment.
+                </p>
+                <p class="text-faded">I am excited to be a part of a team that is shaping the future of transportation
+                    and making a positive impact on society.
+                </p>
+                <br><br><br>
+                <p class="text-faded">If you have any questions or opportunities, please feel free to contact me using
+                    the information below.
+                </p>
+                <br><br>
+                <a href="#contact" class="btn btn-default btn-xl wow tada page-scroll">Contact Me</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section id="contact">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <img style="text-align: center; border-radius: 50%" src="img/my_photo.jpg" alt="My picture" width="330"
+                    height="330">
+                <br><br><br><br>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">CONTACT INFORMATION</h2>
+                <hr class="primary">
+                <!-- <br> -->
+                <!-- <h2 class="section-heading"><b>Yael Ben Shalom</b></h2> -->
+                <!-- <br> -->
+                <img src="img/qr/myQR.png" alt="My picture" width="200">
+                <br><br><br>
+                <!-- <p><i class="fa fa-phone" style="font-size:18px"></i>&nbsp; +1-(312)-560-6007</p>
+                <p><i class="fa fa-envelope" style="font-size:18px"></i><a href="mailto:yael.bshalom@gmail.com"
+                        target="_blank">&nbsp; yael.bshalom@gmail.com</a></p> -->
+                <!-- <p><i class="fa fa-github" style="font-size:18px"><a href="https://github.com/YaelBenShalom"
+                            target="_blank"></i>&nbsp; github.com/YaelBenShalom</a></p>
+                <p><i class="fa fa-linkedin" style="font-size:18px"><a href="https://www.linkedin.com/in/yael-benshalom"
+                            target="_blank"></i>&nbsp; linkedin.com/in/yael-benshalom</a></p> -->
+
+            </div>
+            <div class="service-box">
+                <div class="row">
+                    <div class="col-xs-2 col-sm-2 col-lg-2 col-xs-offset-2 col-sm-offset-2 col-lg-offset-2">
+                        <a href="#header" class="page-scroll">
+                            <i class="fa fa-home fa-3x wow bounceIn center" aria-hidden="true" data-wow-delay=".1s"></i>
+                            <p></p>
+                        </a>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-lg-2">
+                        <a href="mailto:yael.bshalom@gmail.com">
+                            <i class="fa fa-envelope fa-3x wow bounceIn center" aria-hidden="true" data-wow-delay=".1s"></i>
+                            <p></p>
+                        </a>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-lg-2">
+                        <a href="https://github.com/YaelBenShalom" target="_blank">
+                            <i class="fa fa-github fa-3x wow bounceIn center" aria-hidden="true" data-wow-delay=".1s"></i>
+                            <p></p>
+                        </a>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-lg-2">
+                        <a href="https://www.linkedin.com/in/yael-benshalom/" target="_blank">
+                            <i class="fa fa-linkedin fa-3x wow bounceIn center" aria-hidden="true" data-wow-delay=".1s"></i>
+                            <p></p>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <br>
+    <p class=text-center>© Yael Ben Shalom, 2021</p>
+</section>
+  <!-- jQuery -->
+<script src="js/jquery.js"></script>
 
-    <!-- Skills Section -->
-    <section id="skills" class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center section-heading">Skills</h2>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <h3>Programming Languages</h3>
-                    <p>Python, JavaScript, Java</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Web Technologies</h3>
-                    <p>HTML, CSS, React, Node.js</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>Tools</h3>
-                    <p>Git, Docker, AWS</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="text-center section-heading">About Me</h2>
-            <div class="row">
-                <div class="col-md-6 text-center">
-                    <img src="profile.jpg" class="img-fluid rounded-circle mb-3" alt="Profile Picture" style="max-width: 300px;">
-                </div>
-                <div class="col-md-6">
-                    <p>A brief description about yourself, your background, and professional interests.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/wow.min.js"></script>
 
-    <!-- Contact Section -->
-    <section id="contact" class="bg-primary text-white py-5">
-        <div class="container">
-            <h2 class="text-center section-heading">Contact Me</h2>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <a href="mailto:youremail@example.com" class="text-white"><i class="fas fa-envelope fa-2x"></i></a>
-                </div>
-                <div class="col-md-4">
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
-                </div>
-                <div class="col-md-4">
-                    <a href="https://github.com/yourusername" target="_blank" class="text-white"><i class="fab fa-github fa-2x"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/creative.js"></script>
 </body>
+
 </html>
